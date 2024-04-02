@@ -1,0 +1,24 @@
+﻿<Window x:Class="Pitpm4.AddingPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pitpm4"
+        mc:Ignorable="d"
+        Title="AddingPage" Height="450" Width="800">
+    <Grid>
+        <Button Content="Выйти на главную" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20"
+    Click="BackToMainWindow_Click"/>
+        <StackPanel x:Name="ProductListBox" Margin="20">
+            <TextBlock Text="Название товара" Foreground="Gray"/>
+            <TextBox x:Name="productNameTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Описание товара" Foreground="Gray"/>
+            <TextBox x:Name="productDescriptionTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Цена товара" Foreground="Gray"/>
+            <TextBox x:Name="productPriceTextBox" Margin="0,0,0,10"/>
+            <Button Content="Выбрать изображение" Click="ChooseImage_Click" Margin="0,0,0,10"/>
+            <Image x:Name="productImage" Margin="0,0,0,10" Width="100" Height="100"/>
+            <Button Content="Добавить товар" Click="AddProduct_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

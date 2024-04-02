@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="314,179,0,0" TextWrapping="Wrap" Text="логин" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="314,217,0,0" TextWrapping="Wrap" Text="пароль" VerticalAlignment="Top" Width="120" TextChanged="textbox2_TextChanged"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="416,271,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="303,271,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
