@@ -86,6 +86,26 @@ namespace Pitpm4
             }
         }
 
+        public class ProductManager
+        {
+            public void AddProduct(string name, string description, decimal price, byte[] imageBytes)
+            {
+                using (MyDbContext db = new MyDbContext())
+                {
+                    Product newProduct = new Product
+                    {
+                        Name = name,
+                        Description = description,
+                        Price = price,
+                        Image = imageBytes
+                    };
+
+                    db.Products.Add(newProduct);
+                    db.SaveChanges();
+                }
+            }
+        }
+
         private void BackToMainWindow_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
